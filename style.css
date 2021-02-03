@@ -1,0 +1,86 @@
+html {
+  background-color: #CD6155 ;
+}
+h1 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  color: #F2D7D5;
+  margin-bottom: 5px;
+}
+#description {
+  font-family: monospace;
+  color: #F2D7D5;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+#survey-form { 
+  background-color: #D98880;
+  color: #ffffff;
+}
+#submit {
+ background-color: #CD6155;
+ color: white;
+ border-radius: 0px;
+ font-family: monospace;
+ padding: 5px;
+ border-color: #CD6155;
+ align-items: center;
+}
+.form-group {
+ display: grid;
+ grid-template-columns: 100%;  
+ align-items: left;
+ margin-bottom: 5px;
+ font-family: monospace;
+}
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+select {
+padding: 0px 5px;
+font-family: monospaces;
+}
+
+.input-group label {
+display: block;
+padding-bottom: 0px;
+text-indent: 10px;
+text-align: left;
+}
+
+.input-group input {
+width: 10px;
+height: 10px;
+margin: 5px;
+padding: 0px;
+vertical-align: bottom;
+position: relative;
+*overflow: hidden;
+text-align: right;
+top: 2px;
+}
+@media (min-width: 400px) {
+ .form-group {
+   display: grid;
+   grid-template-columns: 200px 1fr;
+   grid-gap: 20px;
+ } 
+.form-group p {
+  font-family: monospace;
+ }
+
+ label, 
+ .form-group p {
+   text-align: right;
+   grid-column: 1 / 2;
+ }
+
+ input,
+ button, 
+ .input-group {
+   grid-column: 2 / 3;
+   margin-bottom: 0px;

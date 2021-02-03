@@ -1,0 +1,66 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<h1 id="title">Survey Form</h1>
+<p for="title" id="description">Bagaimana anda menjalani hari anda selama masa pandemi?</p>
+
+	<form id="survey-form">
+		<div class="form-group">
+		<label id="name-label" for="name">Nama:</label>
+		<input id="name" type="text" placeholder="masukkan nama lengkap anda">
+		<span class="validity"></span>
+		</div>      
+		
+		<div class="form-group">
+		<label id="email-label" for="email">Email:</label>
+		<input id="email" type="email" placeholder="masukkan email anda">
+		<span class="validity"></span>
+		</div>
+	 
+		<div class="form-group">
+		<label id="number-label" for="number">Umur:</label>
+		<input id="number" type="number" min="14" max="25" placeholder="umur anda sekarang">
+		<span class="validity"></span> 
+		</div>
+	 
+		<div class="form-group">      
+		<label id="role-label" for="dropdown">Jenjang Pendidikan Saat Ini:</label>
+		<select id="dropdown" name="current-role">
+			<option value="" disabled selected>Pilih</option>
+			<option value="Pelajar">Pelajar</option>
+			<option value="Mahasiswa">Mahasiswa</option>
+			<option value="Gap Year">Gap Year</option>
+
+			<option value="Bisnis">Menekuni Bisnis Kecil</option>
+			<option value=Lainnya>Lainnya</option>
+		</select>
+		</div>
+	 
+		<div class="form-group">       
+		<p>Apakah anda termasuk kategori selalu melakukan kegiatan?</p>
+		<div class="input-group">
+			<label for="iya"><input id="iya" type="radio" name="user-rating" value="iya" checked>Iya</label>
+			<label for="tidak"><input id="tidak" type="radio" name="user-rating" value="tidak">Tidak</label>
+			<label for="mungkin"><input id="mungkin" type="radio" name="user-rating" value="mungkin">Mungkin</label>
+		</div>
+		</div>
+	 
+		<div class="form-group">       
+		<p>Kegiatan apa saja yang anda lakukan?<br>(Centang bagian yang sering anda lakukan)</p>
+		<div class="input-group">
+			<label><input type="checkbox" name="improvements" value="olahraga"> Berolahraga setiap pagi dan sore hari</label>
+			<label><input type="checkbox" name="improvements" value="belajar"> Belajar online/kelas online</label>
+			<label><input type="checkbox" name="improvements" value="belanja"> Belanja di online shop</label>
+			<label><input type="checkbox" name="improvements" value="masak"> Membuat suatu resep baru makanan dan minuman</label>
+			<label><input type="checkbox" name="improvements" value="jualan"> Berjualan online</label>
+			<label><input type="checkbox" name="improvements" value="masker"> Memakai masker wajah (perawatan wajah)</label>
+			<label><input type="checkbox" name="improvements" value="game"> Bermain game setiap hari</label>
+			<label><input type="checkbox" name="improvements" value="menonton"> Menonton drakor, video di tiktok ataupun youtube</label>
+			<label><input type="checkbox" name="improvements" value="ngaji"> Mengaji</label>
+			<label><input type="checkbox" name="improvements" value="rebahan"> Rebahan</label>
+			<label><input type="checkbox" name="improvements" value="membantu"> Membantu orang tua</label>
+		</div>
+		</div>
+	 
+		<div class="form-group">
+		<input id="submit" class="button" type="submit" value="SUBMIT">
+		</div>
+	</form>
